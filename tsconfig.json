@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "inlineSourceMap": true,
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "build",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}

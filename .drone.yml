@@ -1,0 +1,14 @@
+pipeline:
+  build:
+    image: node:alpine
+    commands:
+      - npm install
+      - npm run build
+  docker:
+    image: rsvp-sms
+    repo: amitshlo
+    tags: latest
+    secrets: [ docker_username, docker_password ]
+    when:
+      branch: master
+      event: push
