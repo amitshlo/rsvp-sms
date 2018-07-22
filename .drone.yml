@@ -5,8 +5,8 @@ pipeline:
       - npm install
       - npm run build
   docker:
-    image: rsvp-sms
-    repo: amitshlo
+    image: plugins/docker
+    repo: amitshlo/rsvp-sms
     tags: latest
     secrets: [ docker_username, docker_password ]
     when:
