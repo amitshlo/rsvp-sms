@@ -7,7 +7,7 @@ export var DB:Connection;
 export function initDB(callback:any) {
     createConnection({
         type: 'postgres',
-        host: 'localhost',
+        host: process.env.DB_HOST || 'localhost',
         port: 5432,
         username: 'postgres',
         password: 'Aa123456',
