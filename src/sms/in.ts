@@ -14,6 +14,7 @@ export class SMSIn {
 
     private static async getSms(req:express.Request, res:express.Response):Promise<any> {
         console.log(req.body, req.query, 'got somthing');
+        res.send({body: req.body, req: req.query, msg: 'got somthing'});
     }
 /*     private static async sendToAllVoid(req:express.Request, res:express.Response):Promise<any> {
         winston.info(`Got request from ${req.ip} to send non-responded guests rsvp`);
